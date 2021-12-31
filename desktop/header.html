@@ -1,1 +1,12 @@
 
+<script type="text/discourse-plugin" version="0.8">
+    api.registerConnectorClass('above-main-container', 'abb-filters-component', {
+      tagName: "div.abb-filters",
+      setupComponent(args, component) {       
+      }
+    });
+  </script>
+
+<script type="text/x-handlebars" data-template-name="/connectors/above-main-container/abb-filters-component">
+    <div class="filter-content"> {mount-widget widget="search-widget"}} </div>
+</script>
