@@ -1,25 +1,5 @@
 @import "common/foundation/mixins";
 
-#search-widget{
-width:45%;
-}
-
-#create-topic,#search-widget{
-display:inline-block;
-}
-
-.start-discussion{
-    width: 170px;
-    height: 40px;
-    border-radius: 4px;
-    background: #3366FF 0% 0% no-repeat padding-box;
-    text-align: center;
-    font: normal normal normal 16px/31px ABBvoice;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    border: 0px;
-}
 
 .display-search-banner {
   #main-outlet {
@@ -158,4 +138,25 @@ display:inline-block;
   span.keyword {
     color: var(--primary);
   }
+}
+
+#search-widget{
+width:45%;
+}
+
+#create-topic,#search-widget{
+display:inline-block;
+}
+
+.start-discussion{
+    width: 170px;
+    height: 40px;
+    border-radius: 4px;
+    background: #3366FF 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal normal 16px/31px ABBvoice;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    border: 0px;
 }
