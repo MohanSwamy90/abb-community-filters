@@ -9,5 +9,8 @@ export default apiInitializer("0.8", (api) => {
     html() {           
       return  h("button.start-discussion","start-discussion");;
     },
+    click(arg) {
+       $('#create-topic').click();
+    }
   });
 });
