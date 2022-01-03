@@ -7,7 +7,7 @@ width:80%;
 display:flex;
 }
 
-#search-widget:first-child{
+#search-widget > div{
   display:flex;
   width:100%;
 }
