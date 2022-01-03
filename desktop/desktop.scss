@@ -4,13 +4,14 @@ width:80%;
 }
 
 #create-topic,#search-widget{
-display:flex;
+display:flex;  
 }
 
-#search-widget > div{
+#search-widget > div, .search-widget{
   display:flex;
   width:100%;
 }
+
 .start-discussion{
     width: 170px;
     height: 40px;
@@ -27,7 +28,9 @@ display:flex;
 .search-menu {
 width:100%
 }
-
+.search-menu .results{
+  position:absolute;
+}
 .filter-content{
 display:flex;
   width:100%;
