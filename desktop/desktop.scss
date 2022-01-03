@@ -28,17 +28,35 @@ display:flex;
 .search-menu {
 width:100%
 }
+
 .search-menu .results{
-  position:absolute;
+  box-sizing: border-box;
+    background: var(--secondary);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+    position: absolute;
+    width: 672px;
+    z-index: 9;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;   
+    right: 0;
+    padding: 2em 1em 1em 1em;
 }
+
 .filter-content{
-display:flex;
+  display:flex;
   width:100%;
 }
 
 .search-icon{
     position: absolute;
-    top: 184px;
-    z-index: 1;
-    right: 322px;
+    z-index: 2;
+    order: 2;
+    right: 280px;
+    background: transparent;
+}
+
+.search-menu .searching{
+    top: 0.5em !important;
+    right: 2.25em !important;
 }
