@@ -10,6 +10,7 @@ export default apiInitializer("0.8", (api) => {
       return  h("button.start-discussion","start-discussion");;
     },
     click(arg) {
+      debugger;
        alert();
     }
   });
