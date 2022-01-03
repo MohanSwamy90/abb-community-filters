@@ -76,3 +76,35 @@ width:100%
     margin: 0px 5px 0px 5px;
     line-height: 34px;
 }
+
+.header-section{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.abb-hr{
+    display: inline-block;
+    background-color: #ff000f;
+    width: 50px;
+    height: 4px;
+    margin: 1.8em auto 0;
+    margin-bottom: 1rem;
+}
+
+.header-title{
+    color: #464646;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: ABBvoice-Medium;
+    height: 42px;
+    line-height: 42px;
+    margin: 0;
+}
+
+.sub-header-title{
+    color: #464646;
+    font-family: ABBvoice-light;
+    font-size: 22px;
+    line-height: 26px;
+}
