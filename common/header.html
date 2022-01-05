@@ -20,6 +20,7 @@
            $("html").removeClass("create-topic");     
        });
        var location = window.location.href;
+       debugger;
        var selectedTab = (location.split('/')[5]===undefiend)?'':location.split('/')[5];
        switch(selectedTab){
        case 'discussion':
@@ -31,9 +32,9 @@
        default:       
         displayDisucssionHeading();
         break;
-       }
-       debugger;
+       }       
       $("#discussion").on("click",function(){
+        debugger;
         displayDisucssionHeading()
        });
        
