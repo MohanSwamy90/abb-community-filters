@@ -11,7 +11,8 @@ export default apiInitializer("0.8", (api) => {
     },
     click(arg) {
       $(".create-topic-backdrop").remove();
-      $("body").append("<div class='create-topic-backdrop'></div>")  
+      $("body").append("<div class='create-topic-backdrop'></div>");
+      $("body").addClass("create-topic");
       $('#create-topic').click();
     }
   });
