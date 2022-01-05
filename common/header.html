@@ -12,10 +12,11 @@
     });
     
      $(document).ready(function() {
-        alert();
-        $(window).on('hashchange', function() {
-        alert(window.location.href);
-        });
+        alert(1);
+       $(window).on('hashchange', function(e){
+            var origEvent = e.originalEvent;
+             console.log('Going to: ' + origEvent.newURL + ' from: ' + origEvent.oldURL);
+    });
     });         
   </script>
 
