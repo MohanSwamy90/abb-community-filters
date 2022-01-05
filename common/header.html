@@ -11,12 +11,14 @@
       }
     });
     
-     $(document).ready(function() {
-        alert(1);
-       $(window).on('hashchange', function(e){
+     $(window).on('hashchange', function(e){
+     debugger;
             var origEvent = e.originalEvent;
              console.log('Going to: ' + origEvent.newURL + ' from: ' + origEvent.oldURL);
     });
+     $(document).ready(function() {
+        alert(1);
+      
     });         
   </script>
 
