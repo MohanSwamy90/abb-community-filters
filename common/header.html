@@ -32,14 +32,18 @@
        default:       
         displayDisucssionHeading();
         break;
-       }       
-      $("#discussion").on("click",function(){
-        debugger;
+       } 
+       
+      $("#discussion").on("click",function(){        
         displayDisucssionHeading()
        });
        
         $("#announce").on("click",function(){
          displayAnnounceHeading();
+       });
+       
+        $("#community").on("click",function(){        
+        displayDisucssionHeading()
        });
        
        function displayDisucssionHeading(){
