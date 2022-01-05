@@ -10,6 +10,8 @@ export default apiInitializer("0.8", (api) => {
       return  h("button.start-discussion","start-discussion");;
     },
     click(arg) {
+      $(".create-topic-backdrop").remove();
+      $("body").append("<div class='create-topic-backdrop'></div>")  
       $('#create-topic').click();
     }
   });
