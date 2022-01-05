@@ -13,14 +13,23 @@
     });   
     
      $(document).ready(function() {
+      $('.header-title').text('Discussion forum');
+      $('.sub-header-title').text('Be a part of various conversations...');
        $("body").on("click",".cancel",function(){
            $(".create-topic-backdrop").remove();
            $("html").removeClass("create-topic");     
        });
        
       $("#discussion").on("click",function(){
-          alert();    
+         $('.header-title').text('Discussion forum');
+         $('.sub-header-title').text('Be a part of various conversations...');
        });
+       
+        $("#announce").on("click",function(){
+         $('.header-title').text('Announcements');
+         $('.sub-header-title').text('Get the latest news here...');
+       });
+       
     });         
   </script>
 
@@ -39,7 +48,7 @@
 <script type="text/x-handlebars" data-template-name="/connectors/above-main-container/abb-heading-component">   
     <div class="header-section">
     <hr class="abb-hr">
-    <p class="header-title">Discussion forum</p>
-    <p class="sub-header-title">Be a part of various conversations...</p>
+    <p class="header-title"></p>
+    <p class="sub-header-title"></p>
     </div>
 </script>
