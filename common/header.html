@@ -20,17 +20,36 @@
            $("html").removeClass("create-topic");     
        });
        var location = window.location.href;
+       var selectedTab = (location.split('/')[5]===undefiend)?'':location.split('/')[5];
+       switch(selectedTab){
+       case 'discussion':
+        displayDisucssionHeading();
+        break;
+       case 'announce':
+        displayAnnounceHeading();
+        break;
+       default:       
+        displayDisucssionHeading();
+        break;
+       }
        debugger;
       $("#discussion").on("click",function(){
-         $('.header-title').text('Discussion forum');
-         $('.sub-header-title').text('Be a part of various conversations...');
+        displayDisucssionHeading()
        });
        
         $("#announce").on("click",function(){
-         $('.header-title').text('Announcements');
-         $('.sub-header-title').text('Get the latest news here...');
+         displayAnnounceHeading();
        });
        
+       function displayDisucssionHeading(){
+         $('.header-title').text('Discussion forum');
+         $('.sub-header-title').text('Be a part of various conversations...');
+       }
+       
+       function displayAnnounceHeading(){
+         $('.header-title').text('Announcements');
+         $('.sub-header-title').text('Get the latest news here...');
+       }
     });         
   </script>
 
