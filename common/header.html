@@ -5,20 +5,18 @@
       setupComponent(args, component) {       
       }
     });
+    
     api.registerConnectorClass('above-main-container', 'abb-heading-component', {
       tagName: "div.abb-headings",
       setupComponent(args, component) {       
       }
-    });
+    });   
     
-     $(window).on('hashchange', function(e){
-     debugger;
-            var origEvent = e.originalEvent;
-             console.log('Going to: ' + origEvent.newURL + ' from: ' + origEvent.oldURL);
-    });
      $(document).ready(function() {
-        alert(1);
-      
+       $("body").on("click",".cancel",function(){
+           $(".create-topic-backdrop").remove();
+           $("html").removeClass("create-topic");     
+       });      
     });         
   </script>
 
