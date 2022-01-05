@@ -9,10 +9,13 @@
       tagName: "div.abb-headings",
       setupComponent(args, component) {       
       }
-    });  
-    $(window).on('hashchange', function() {
+    });
+    $(document).ready(function() {
+        $(window).on('hashchange', function() {
         alert(window.location.href);
     });
+    });
+    
        
   </script>
 
