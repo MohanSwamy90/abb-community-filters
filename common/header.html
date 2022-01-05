@@ -19,7 +19,8 @@
            $(".create-topic-backdrop").remove();
            $("html").removeClass("create-topic");     
        });
-       
+       var location = window.location.href;
+       debugger;
       $("#discussion").on("click",function(){
          $('.header-title').text('Discussion forum');
          $('.sub-header-title').text('Be a part of various conversations...');
