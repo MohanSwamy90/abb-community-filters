@@ -134,14 +134,24 @@ html.create-topic{
   display: none !important;
 }
 
-#reply-control.category-input.category-chooser.selected-name.name{
- font-family: ABBvoice-Medium;
-  font-size: 14px;
-  color: #464646
+#reply-control .category-input .category-chooser .selected-name .name {
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    font-family: ABBvoice-Medium;
+    font-size: 13px;
+    color: #464646;
+    font-weight: 500;
 }
 
-.select-kit.multi-select.multi-select-header.formated-selection {
-  font-family: ABBvoice-Medium;
-  font-size: 14px; 
-  color: #464646
+.select-kit.multi-select .multi-select-header .formated-selection {
+    margin: 0;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    font-size: 13px;
+    color: #464646;
+    font-weight: 500;
 }
