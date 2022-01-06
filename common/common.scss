@@ -115,3 +115,33 @@ html.create-topic{
 .btn.btn-icon-text.btn-primary.create{
   background: #36f;
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color:gray;
+  opacity: 0.7;
+  font-family: ABBvoice-Medium;
+  font-size: 14px; /* Firefox */
+}
+
+#reply-control .reply-to .composer-action-title .action-title {
+    padding-bottom: 20px;
+    color: #464646
+    font-size: 15px;
+
+}
+
+.btn-flat.btn-mini-toggle.toggle-preview  {
+  display: none !important;
+}
+
+.#reply-control.category-input.category-chooser.selected-name.name{
+ font-family: ABBvoice-Medium;
+  font-size: 14px;
+  color: #464646
+}
+
+.select-kit.multi-select.multi-select-header.formated-selection {
+  font-family: ABBvoice-Medium;
+  font-size: 14px; 
+  color: #464646
+}
