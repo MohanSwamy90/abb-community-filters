@@ -96,3 +96,22 @@ width:100%
 html.create-topic{
   overflow: hidden;
 }
+
+.cancel{
+    cursor: pointer;
+    transition: all 0.25s;
+    background-color: #dbdbdb;
+    border: 2px solid #dbdbdb;
+    color: #1f1f1f;
+    line-height: normal;
+    box-sizing: border-box;
+    padding: 0.5em 0.65em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.btn.btn-icon-text.btn-primary.create{
+  background: #36f;
+}
