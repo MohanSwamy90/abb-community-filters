@@ -13,8 +13,7 @@
     });   
     
      $(document).ready(function() {
-      $('.header-title').text('Discussion forum');
-      $('.sub-header-title').text('Be a part of various conversations...');
+     clearDisucssionHeading();
        $("body").on("click",".cancel",function(){
            $("#reply-control").removeClass("open");
            $(".create-topic-backdrop").remove();
@@ -29,8 +28,8 @@
        case 'announcements':
         displayAnnounceHeading();
         break;
-       default:       
-        displayDisucssionHeading();
+       default:
+       clearDisucssionHeading();
         break;
        } 
        
@@ -49,6 +48,11 @@
        function displayDisucssionHeading(){
          $('.header-title').text('Discussion forum');
          $('.sub-header-title').text('Be a part of various conversations...');
+       }
+       
+       function clearDisucssionHeading(){
+         $('.header-title').text('');
+         $('.sub-header-title').text('');
        }
        
        function displayAnnounceHeading(){
