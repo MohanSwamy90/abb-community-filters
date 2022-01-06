@@ -7,7 +7,7 @@ export default apiInitializer("0.8", (api) => {
     tagName: "div.create-topic-widget",
 
     html() {           
-      return  h("button.start-discussion","start-discussion");;
+      return  h("button.start-discussion","Start a Discussion");;
     },
     click(arg) {
       $(".create-topic-backdrop").remove();
