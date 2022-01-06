@@ -24,9 +24,11 @@
        switch(selectedTab){
        case 'discussion':
         displayDisucssionHeading();
+        showDisucssionHeading
         break;
        case 'announcements':
         displayAnnounceHeading();
+        showDisucssionHeading
         break;
        default:
        clearDisucssionHeading();
@@ -35,14 +37,16 @@
        
       $("#discussion").on("click",function(){        
         displayDisucssionHeading()
+        showDisucssionHeading
        });
        
         $("#announce").on("click",function(){
          displayAnnounceHeading();
+         showDisucssionHeading
        });
        
         $("#community").on("click",function(){        
-        displayDisucssionHeading()
+        clearDisucssionHeading()
        });
        
        function displayDisucssionHeading(){
@@ -51,8 +55,13 @@
        }
        
        function clearDisucssionHeading(){
-         $('.header-title').text('');
-         $('.sub-header-title').text('');
+         $('.header-title').hide();
+         $('.sub-header-title').hide();
+       }
+       
+       function showDisucssionHeading(){
+         $('.header-title').show();
+         $('.sub-header-title').show();
        }
        
        function displayAnnounceHeading(){
